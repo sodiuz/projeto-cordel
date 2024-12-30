@@ -9,76 +9,86 @@
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: white;
+}
+
 header {
-    min-height: 200px;
     background-color: black;
     color: white;
     text-align: center;
 }
 
-header h1 {
+header > h1 {
+    padding-top: 50px;
     font-family: "Passion One", serif;
     font-weight: bold;
-    font-size: 5vw;
+    font-variant: small-caps;
 }
+
 header p {
+    padding-bottom: 50px;
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: normal;
 }
 
-header a {
+header a, footer a {
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: bold;
     text-decoration: none;
     color: white;
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
-}
-
-.container1 {
-    position: relative;
-}
-
-.conteudo1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.conteudo2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 100%);
-    margin-top: 5px;
 }
 
 body p {
     font-family: "Sriracha", serif;
 }
 
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
 .normal {
-    min-height: 600px;
-    max-height: 1000px;
+    background-color: white;
+    color: black;
 }
 
 .fundo1 {
     background-image: url('../imagens/background001.jpg');
     background-position: center center;
     background-attachment: fixed;
+    background-color: rgb(54, 50, 50);
     color: white;
-    min-height: 600px;
-    max-height: 1000px;
+}
+
+.fundo1 > p {
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 400px;
 }
 
 .fundo2 {
     background-image: url('../imagens/background002.jpg');
     background-position: center center;
     background-attachment: fixed;
+    background-color: rgb(54, 50, 50);
     color: white;
-    min-height: 600px;
-    max-height: 1000px;
+}
+
+.fundo2 > p {
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 400px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
 }
