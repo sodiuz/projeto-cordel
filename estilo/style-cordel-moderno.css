@@ -4,12 +4,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+:root {
+    --fonte1: 'Verdana', Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
+    font-family: var(--fonte1);
     min-height: 100vh;
     background-color: white;
 }
@@ -21,20 +29,21 @@ header {
 }
 
 header > h1 {
+    font-size: 10vw; /* Vai fazer a fonte se adaptar ao tamanho da tela. Não é a melhor forma, mas dá pra fazer */
     padding-top: 50px;
-    font-family: "Passion One", serif;
+    font-family: var(--fonte2);
     font-weight: bold;
     font-variant: small-caps;
 }
 
-header p {
+header > p {
     padding-bottom: 50px;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: var(--fonte1);
     font-weight: normal;
 }
 
 header a, footer a {
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: var(--fonte1);
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -49,10 +58,16 @@ body p {
 }
 
 section {
+    font-family: var(--fonte3);
+    font-size: 3.2vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 .normal {
@@ -62,28 +77,35 @@ section {
 
 .fundo1 {
     background-image: url('../imagens/background001.jpg');
-    background-position: center center;
+    background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
     background-color: rgb(54, 50, 50);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 .fundo1 > p {
     background-color: rgba(0, 0, 0, 0.342);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
 .fundo2 {
     background-image: url('../imagens/background002.jpg');
-    background-position: center center;
+    background-position: right center;
+    background-size: cover;
     background-attachment: fixed;
     background-color: rgb(54, 50, 50);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 .fundo2 > p {
     background-color: rgba(0, 0, 0, 0.342);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer {
@@ -91,4 +113,8 @@ footer {
     color: white;
     text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
+}
+
+footer > p {
+    font-family: var(--fonte1);
 }
