@@ -13,8 +13,8 @@
 }
 
 html, body {
-    font-family: var(--fonte1);
-    background-color: darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 }
 
 header {
@@ -36,35 +36,70 @@ header > p {
 }
 
 section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+article {
     background-color: white;
     text-align: justify;
     text-indent: 30px;
     max-width: 1120px;
     min-width: 450px;
     margin: auto;
+    border-radius: 15px;
 }
 
-section > blockquote {
+article > blockquote {
+    padding-left: 36px;
+    text-align: justify;
     text-indent: 0px;
-    text-align: center;
+    font-size: 1.2em;
 }
 
-section > p {
+article > p {
     line-height: 1.5em;
     padding: 5px 5px 5px 5px;
+    font-size: 1.3em;
+    font-weight: normal;
 }
 
-section > h2 {
+
+article > h2 {
     padding: 10px 0px 10px 0px;
     font-family: var(--fonte2);
     font-size: 2em;
+    text-align: center;
+}
+
+.fundo-transparente {
+    background-color: rgba(255, 255, 255, 0.514);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.459);
+}
+
+ul {
+    font-family: var(--fonte1);
+    list-style: disc;
+    list-style-position: inside;
+    columns: 2;
+    padding: 5px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+#milton {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
     color: black;
-    background-color: lightblue;
+    background-color: lightpink;
 }
 
 a:hover {
