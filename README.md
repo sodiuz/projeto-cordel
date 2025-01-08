@@ -1,4 +1,4 @@
 # projeto-cordel
- Página que possui cordéis, um efeito parallax e responsividade. Foi feito durante o Capítulo 20 do curso de HTML5 e CSS3, agradeço ao professor Gustavo Guanabara.
+ A page featuring cordel literature (a Brazilian literary genre), a parallax effect, and responsiveness. This was created during Chapter 20 of the HTML5 and CSS3 course by Professor Gustavo Guanabara. I would like to thank Professor Gustavo Guanabara.
 
-https://sodiuz.github.io/projeto-cordel/ Aqui está o link para acessar o site. Ele ainda não está finalizado! Muitas coisas podem ser alteradas com o passar do tempo.
+Here is the link to access the website. The site is still not finished! Many things may change over time.
